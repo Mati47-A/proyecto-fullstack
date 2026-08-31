@@ -1,0 +1,90 @@
+/* =========================================================
+   styleLogin.css — estilos del formulario de inicio de sesión
+   Usa clases (los id quedan libres para el JS)
+   ========================================================= */
+
+.contenedor-login{
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+.formulario-login{
+    width: 100%;
+    max-width: 420px;
+}
+
+.ficha-login{
+    background-color: #ece5d6;
+    border: none;
+    border-left: 4px solid #6b8f47;
+    border-top: 6px solid #e8a33d;
+    border-radius: 6px;
+    padding: 25px 22px;
+}
+
+.titulo-formulario{
+    color: #1e3a2f;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 0 6px;
+}
+
+.etiqueta-campo{
+    display: block;
+    color: #1e3a2f;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.campo-input{
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b5651d;
+    border-radius: 4px;
+    background-color: #fdfaf3;
+    color: #1e3a2f;
+    font-family: inherit;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.campo-input:focus{
+    outline: none;
+    border-color: #6b8f47;
+    box-shadow: 0 0 0 2px rgba(107, 143, 71, 0.25);
+}
+
+.boton-formulario{
+    display: block;
+    width: 100%;
+    background-color: #e8a33d;
+    color: #1e3a2f;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.boton-formulario:hover{
+    background-color: #c9821f;
+}
+
+.enlace-secundario{
+    text-align: center;
+    margin-top: 14px;
+}
+
+.enlace-login{
+    color: #1e3a2f;
+    font-size: 0.9em;
+    text-decoration: underline;
+}
+
+.enlace-login:hover{
+    color: #c9821f;
+}

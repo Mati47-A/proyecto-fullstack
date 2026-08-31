@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión — NutriVida</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleLogin.css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="img/logotipo.jpg" alt="Logotipo" class="logo">
+        <h1 class="titulo-marca">NutriVida</h1>
+        <p class="subtitulo-marca">Clínica nutricional en Temuco</p>
+
+        <nav id="menu-principal">
+            <ul class="menu-lista">
+                <li><a href="index.html" class="enlace-menu">Inicio</a></li>
+                <li><a href="index.html#nosotros" class="enlace-menu">Nosotros</a></li>
+                <li><a href="index.html#especialidades" class="enlace-menu">Especialidades</a></li>
+                <li><a href="servicios.html" class="enlace-menu">Catálogo</a></li>
+                <li><a href="contacto.html" class="enlace-menu">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-login">
+        <form id="acceso" class="formulario-login">
+            <fieldset class="ficha-login">
+                <legend class="titulo-formulario">Inicio de sesión</legend>
+
+                <label class="etiqueta-campo">Correo electronico :</label>
+                <input type="email"
+                name="correo"
+                id="correo"
+                class="campo-input"
+                placeholder="usuario@gmail.com"
+                required
+                >
+                <br/><br/>
+
+                <label class="etiqueta-campo">Contraseña :</label>
+                <input type="password"
+                name="contrasena"
+                id="contrasena"
+                class="campo-input"
+                placeholder="Ingrese su contraseña"
+                min="8"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                title="Debe tener almenos 8 caracteres, una mayúscula, una minúscula y un número"
+                required
+                >
+                <br/><br/>
+
+                <button type="submit" class="boton-formulario">ENVIAR</button>
+            </fieldset>
+
+            <p class="enlace-secundario">
+                <a href="registro.html" class="enlace-login">¿No tienes cuenta? Regístrate</a>
+            </p>
+        </form>
+    </main>
+
+    <footer id="pie">
+        <p class="pie-marca">NutriVida</p>
+        <p class="pie-texto">Temuco, Región de La Araucanía</p>
+        <p class="pie-texto">contacto@nutrivida.cl | +56 9 0000 0000</p>
+        <p class="pie-texto pie-copyright">&copy; 2026 NutriVida</p>
+    </footer>
+    <script src="js/validaform.js"></script>
+</body>
+</html>
