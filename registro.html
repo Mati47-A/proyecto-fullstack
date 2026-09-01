@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario - NutriVida</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleRegistro.css">
+</head>
+<body>
+    <header id="encabezado" class="encabezado">
+    <img src="img/logotipo.jpg" alt="Logotipo" class="logo">
+    <h1 class="titulo-marca">NutriVida</h1>
+    <p class="subtitulo-marca">Clínica nutricional en Temuco</p>
+
+        <nav id="menu-principal">
+            <ul class="menu-lista">
+                <li><a href="index.html" class="enlace-menu">Inicio</a></li>
+                <li><a href="#nosotros" class="enlace-menu">Nosotros</a></li>
+                <li><a href="#especialidades" class="enlace-menu">Especialidades</a></li>
+                <li><a href="#video" class="enlace-menu">Video</a></li>
+                <li><a href="servicios.html" class="enlace-menu">Catálogo</a></li>
+                <li><a href="contacto.html" class="enlace-menu">Detalle de catálogo</a></li>
+                <li><a href="login.html" class="enlace-menu">Inicio de sesión</a></li>
+                <li><a href="registro.html" class="enlace-menu">Registro de sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenedor-registro">
+        <form id="registro" class="formulario-registro">
+            <fieldset class="ficha-registro">
+                <legend class="titulo-formulario">Registro de usuario</legend>
+
+                <label class="etiqueta-campo">Nombre :</label>
+                <input type="text"
+                name="nombre"
+                id="nombre"
+                class="campo-input"
+                placeholder="Ingrese su nombre"
+                required
+                >
+                <br/><br/>
+
+                <label class="etiqueta-campo">Apellido :</label>
+                <input type="text"
+                name="apellido"
+                id="apellido"
+                class="campo-input"
+                placeholder="Ingrese su apellido"
+                required
+                >
+                <br/><br/>
+
+                <label class="etiqueta-campo">Correo electronico :</label>
+                <input type="email"
+                name="correo"
+                id="correo"
+                class="campo-input"
+                placeholder="usuario@gmail.com"
+                required
+                >
+                <br/><br/>
+
+                <label class="etiqueta-campo">Telefono :</label>
+                <input type="tel"
+                name="fono"
+                id="fono"
+                class="campo-input"
+                placeholder="+56912345678"
+                required
+                >
+                <br/><br/>
+
+                <label class="etiqueta-campo">Fecha de nacimiento :</label>
+                <input type="date"
+                name="fenac"
+                id="fenac"
+                class="campo-input"
+                required
+                >
+                <br/><br/>
+
+                <label class="etiqueta-campo">Especialidad de interes :</label>
+                <select name="especialidad" id="especialidad" class="campo-input" required>
+                    <option value="">-- SELECCIONE UNA OPCION --</option>
+                    <option value="peso">Control de peso</option>
+                    <option value="metabolica">Enfermedades metabólicas</option>
+                    <option value="deportiva">Nutrición deportiva</option>
+                    <option value="vegetariana">Vegetariana / vegana</option>
+                </select>
+                <br/><br/>
+
+                <label class="etiqueta-campo">Modalidad de atencion preferida :</label>
+                <br/>
+                <div class="grupo-radio">
+                    <input type="radio" name="modalidad" id="modalidad-presencial" value="presencial">
+                    <label for="modalidad-presencial" class="etiqueta-radio">Presencial</label>
+
+                    <input type="radio" name="modalidad" id="modalidad-online" value="online">
+                    <label for="modalidad-online" class="etiqueta-radio">Online</label>
+                </div>
+                <br/><br/>
+
+                <label class="etiqueta-campo">Contraseña :</label>
+                <input type="password"
+                name="contrasena"
+                id="contrasena"
+                class="campo-input"
+                placeholder="Ingrese su contraseña"
+                min="8"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                title="Debe tener almenos 8 caracteres, una mayúscula, una minúscula y un número"
+                required
+                >
+                <br/><br/>
+
+                <label class="etiqueta-campo">Confirmar contraseña :</label>
+                <input type="password"
+                name="confirmar"
+                id="confirmar"
+                class="campo-input"
+                placeholder="Repita su contraseña"
+                required
+                >
+                <br/><br/>
+
+                <button type="submit" class="boton-formulario">REGISTRARSE</button>
+            </fieldset>
+
+            <p class="enlace-secundario">
+                <a href="login.html" class="enlace-registro">¿Ya tienes cuenta? Inicia sesión</a>
+            </p>
+            <p class="enlace-secundario">
+                <a href="index.html" class="enlace-registro">Volver a la página principal</a>
+            </p>
+        </form>
+    </main>
+
+    <footer id="pie" class="pie">
+        <p class="pie-marca">NutriVida</p>
+        <p class="pie-texto">Temuco, Región de La Araucanía</p>
+        <p class="pie-texto">contacto@nutrivida.cl | +56 9 0000 0000</p>
+        <p class="pie-texto pie-copyright">&copy; 2026 NutriVida</p>
+    </footer>
+    <script src="js/validaReg.js"></script>
+</body>
+</html>

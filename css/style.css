@@ -1,3 +1,4 @@
+/* estilos generales de la pagina */
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #f2ede4;
@@ -5,7 +6,8 @@ body{
     margin: 0;
 }
 
-#encabezado{
+/* encabezado con el logo y el menu */
+.encabezado{
     background-color: #1e3a2f;
     color: #f7f3e9;
     text-align: center;
@@ -13,6 +15,7 @@ body{
     border-bottom: 4px solid #6b8f47;
 }
 
+/* tamaño y forma del logo */
 .logo{
     width: 60px;
     height: 60px;
@@ -21,16 +24,19 @@ body{
     float: left;
 }
 
+/* titulo NutriVida */
 .titulo-marca{
     margin: 0;
     font-size: 2em;
 }
 
+/* texto de abajo del titulo */
 .subtitulo-marca{
     margin: 5px 0 0;
     color: #cbd8c4;
 }
 
+/* lista del menu de navegacion */
 .menu-lista{
     list-style: none;
     display: flex;
@@ -41,6 +47,7 @@ body{
     flex-wrap: wrap;
 }
 
+/* links del menu */
 .enlace-menu{
     text-decoration: none;
     color: #1e3a2f;
@@ -50,16 +57,19 @@ body{
     font-weight: bold;
 }
 
+/* efecto al pasar el mouse por el menu */
 .enlace-menu:hover{
     background-color: #c9821f;
 }
 
-#contenido{
+/* contenedor principal, centra el contenido */
+.contenido{
     margin: 20px auto;
     max-width: 900px;
     padding: 0 15px;
 }
 
+/* caja de cada seccion de la pagina */
 .seccion{
     background-color: #ece5d6;
     padding: 20px;
@@ -68,15 +78,18 @@ body{
     border-left: 4px solid #6b8f47;
 }
 
+/* titulo de cada seccion */
 .titulo-seccion{
     color: #1e3a2f;
     margin-top: 0;
 }
 
+/* texto normal de cada seccion */
 .texto-seccion{
     color: #4b4a42;
 }
 
+/* botones tipo "ver catalogo" */
 .boton{
     display: inline-block;
     text-decoration: none;
@@ -92,6 +105,7 @@ body{
     background-color: #c9821f;
 }
 
+/* fila donde van las tarjetas/imagenes */
 .galeria{
     display: flex;
     gap: 15px;
@@ -99,6 +113,7 @@ body{
     justify-content: center;
 }
 
+/* tarjeta de cada especialidad */
 .tarjeta{
     background-color: #fdfaf3;
     border: 1px solid #b5651d;
@@ -108,6 +123,7 @@ body{
     padding-bottom: 12px;
 }
 
+/* recuadro grande de imagen (seccion nosotros) */
 .espacio-imagen{
     width: 100%;
     height: 300px;
@@ -122,6 +138,7 @@ body{
     display: block;
 }
 
+/* recuadro chico de imagen (tarjetas especialidades) */
 .espacio-imagen2{
     width: 100%;
     height: 150px;
@@ -136,18 +153,21 @@ body{
     display: block;
 }
 
+/* titulo dentro de la tarjeta */
 .titulo-tarjeta{
     margin: 10px 0 5px;
     color: #1e3a2f;
     font-size: 1.05em;
 }
 
+/* texto dentro de la tarjeta */
 .texto-tarjeta{
     margin: 0 10px;
     font-size: 0.9em;
     color: #4b4a42;
 }
 
+/* fila con los numeros/datos de la clinica */
 .dato-clinica{
     display: flex;
     gap: 15px;
@@ -157,6 +177,7 @@ body{
     margin-top: 15px;
 }
 
+/* cada cuadro de dato */
 .dato-clinica div{
     background-color: #fdfaf3;
     border: 1px solid #b5651d;
@@ -165,12 +186,14 @@ body{
     min-width: 100px;
 }
 
+/* numero grande dentro del dato */
 .dato-clinica strong{
     display: block;
     font-size: 1.3em;
     color: #1e3a2f;
 }
 
+/* caja del video para que sea responsive */
 .video-caja{
     position: relative;
     width: 100%;
@@ -189,23 +212,27 @@ body{
     border: 0;
 }
 
-#pie{
+/* pie de pagina */
+.pie{
     background-color: #1e3a2f;
     text-align: center;
     padding: 20px;
     color: #f7f3e9;
 }
 
+/* nombre de la clinica en el pie */
 .pie-marca{
     margin: 4px 0;
     font-weight: bold;
     font-size: 1.1em;
 }
 
+/* datos de contacto en el pie */
 .pie-texto{
     margin: 4px 0;
 }
 
+/* linea de copyright, un poco mas tenue */
 .pie-copyright{
     opacity: 0.75;
     font-size: 0.85em;

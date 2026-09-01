@@ -1,5 +1,5 @@
 /* centra el formulario en la pagina */
-.contenedor-login{
+.contenedor-registro{
     display: flex;
     justify-content: center;
     margin: 40px auto;
@@ -7,13 +7,13 @@
 }
 
 /* ancho del formulario */
-.formulario-login{
+.formulario-registro{
     width: 100%;
     max-width: 420px;
 }
 
 /* caja/ficha donde va todo el formulario */
-.ficha-login{
+.ficha-registro{
     background-color: #ece5d6;
     border: none;
     border-left: 4px solid #6b8f47;
@@ -22,7 +22,7 @@
     padding: 25px 22px;
 }
 
-/* titulo "inicio de sesion" */
+/* titulo "registro de usuario" */
 .titulo-formulario{
     color: #1e3a2f;
     font-weight: bold;
@@ -38,7 +38,7 @@
     margin-bottom: 6px;
 }
 
-/* estilo de los input */
+/* estilo de los input y el select */
 .campo-input{
     width: 100%;
     padding: 10px 12px;
@@ -58,7 +58,7 @@
     box-shadow: 0 0 0 2px rgba(107, 143, 71, 0.25);
 }
 
-/* boton de enviar */
+/* boton de registrarse */
 .boton-formulario{
     display: block;
     width: 100%;
@@ -77,19 +77,38 @@
     background-color: #c9821f;
 }
 
-/* espacio para el link de registrarse */
+/* espacio para los links de abajo del boton */
 .enlace-secundario{
     text-align: center;
-    margin-top: 14px;
+    margin-top: 10px;
 }
 
-/* link para ir a registrarse */
-.enlace-login{
+/* links para ir a login o al inicio */
+.enlace-registro{
     color: #1e3a2f;
     font-size: 0.9em;
     text-decoration: underline;
 }
 
-.enlace-login:hover{
+.enlace-registro:hover{
     color: #c9821f;
+}
+
+/* caja que contiene los radio de modalidad */
+.grupo-radio{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    background-color: #fdfaf3;
+    border: 1px solid #b5651d;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-top: 4px;
+}
+
+/* texto al lado de cada radio button */
+.etiqueta-radio{
+    color: #1e3a2f;
+    font-weight: normal;
+    margin-right: 4px;
 }
