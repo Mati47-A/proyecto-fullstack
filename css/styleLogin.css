@@ -1,7 +1,9 @@
-/* centra el formulario en la pagina */
+/* centra el formulario en la pagina y crece para empujar el pie hacia abajo */
 .contenedor-login{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex: 1;
     margin: 40px auto;
     padding: 0 15px;
 }
@@ -12,7 +14,7 @@
     max-width: 420px;
 }
 
-/* caja/ficha donde va todo el formulario */
+/* caja donde va todo el formulario */
 .ficha-login{
     background-color: #ece5d6;
     border: none;
@@ -58,7 +60,7 @@
     box-shadow: 0 0 0 2px rgba(107, 143, 71, 0.25);
 }
 
-/* boton de enviar */
+/* boton enviar */
 .boton-formulario{
     display: block;
     width: 100%;

@@ -38,7 +38,7 @@ const planes = {
         imagen: "img/nutricion_deportiva.jpg",
         infoAdicional: "Incluye plan de carga de energía según tu carga de entrenamiento, recomendaciones de hidratación y ajuste según etapa de competencia."
     },
-    "vegetariana-vegana": {
+    "alimentacion-vegetariana": {
         nombre: "Plan Vegetariano y Vegano",
         descripcion: "Planes completos sin productos de origen animal, cuidando cada nutriente esencial.",
         precio: 26000,

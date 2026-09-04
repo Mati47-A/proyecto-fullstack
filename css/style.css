@@ -4,6 +4,9 @@ body{
     background-color: #f2ede4;
     padding: 0;
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* encabezado con el logo y el menu */
@@ -89,7 +92,7 @@ body{
     color: #4b4a42;
 }
 
-/* botones tipo "ver catalogo" */
+/* botones de "ver catalogo" */
 .boton{
     display: inline-block;
     text-decoration: none;
@@ -193,7 +196,7 @@ body{
     color: #1e3a2f;
 }
 
-/* caja del video, solo para el borde y las esquinas */
+/* caja que envuelve el video, solo para el borde y las esquinas */
 .video-caja{
     border-radius: 6px;
     overflow: hidden;
@@ -201,7 +204,7 @@ body{
     background-color: #000;
 }
 
-/* el video, que ocupe todo el ancho de la caja */
+/* el video, mantiene su propia proporcion */
 .mi-video{
     width: 100%;
     height: auto;
