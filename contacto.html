@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detalle del plan — NutriVida</title>
+<link rel="stylesheet" href="css/stylecontacto.css">
+</head>
+<body>
+
+<header id="encabezado">
+    <img src="img/logotipo.jpg" alt="Logotipo" class="logo">
+    <h1 class="titulo-marca">NutriVida</h1>
+    <p class="subtitulo-marca">Clínica nutricional en Temuco</p>
+
+    <nav id="menu-principal">
+        <ul class="menu-lista">
+            <li><a href="index.html" class="enlace-menu">Inicio</a></li>
+            <li><a href="#nosotros" class="enlace-menu">Nosotros</a></li>
+            <li><a href="#especialidades" class="enlace-menu">Especialidades</a></li>
+            <li><a href="#video" class="enlace-menu">Video</a></li>
+            <li><a href="servicio.html" class="enlace-menu">Catálogo</a></li>
+            <li><a href="login.html" class="enlace-menu">Inicio de sesión</a></li>
+            <li><a href="registro.html" class="enlace-menu">Registro de sesión</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main id="contenido">
+
+    <section class="seccion" id="detalle">
+        <div class="detalle-producto">
+
+            <div class="detalle-imagen">
+                <img id="detalle-img" src="img/control_de_peso.jpg" alt="Imagen del plan">
+            </div>
+
+            <div class="detalle-info">
+                <h2 class="titulo-seccion" id="detalle-nombre">Plan Control de Peso</h2>
+                <p class="texto-seccion" id="detalle-descripcion">
+                    Seguimiento progresivo con medición periódica y ajuste de dieta cada sesión.
+                </p>
+                <p class="detalle-precio"><span id="detalle-precio">$25.000</span> / sesión</p>
+
+                <button type="button" class="boton" id="btn-info">Ver información adicional</button>
+                <div class="detalle-adicional" id="info-adicional">
+                    Incluye control de peso y perímetros, plan alimentario personalizado en
+                    formato digital y contacto directo con tu nutricionista entre sesiones
+                    para resolver dudas.
+                </div>
+
+                <div class="selector-sesiones">
+                    <label for="cantidad-sesiones"><strong>Sesiones:</strong></label>
+                    <button type="button" id="btn-restar" aria-label="Restar sesión">−</button>
+                    <span id="cantidad-sesiones">1</span>
+                    <button type="button" id="btn-sumar" aria-label="Sumar sesión">+</button>
+                </div>
+
+                <div class="total-caja">
+                    Total estimado: <strong id="total-precio">$25.000</strong>
+                </div>
+
+                <button type="button" class="boton" id="btn-reservar">Reservar plan</button>
+                <p class="mensaje-accion" id="mensaje-reserva"></p>
+
+                <a href="servicio.html" class="enlace-volver">← Volver al catálogo</a>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer id="pie">
+    <p class="pie-marca">NutriVida</p>
+    <p class="pie-texto">Temuco, Región de La Araucanía</p>
+    <p class="pie-texto">contacto@nutrivida.cl | +56 9 0000 0000</p>
+    <p class="pie-texto pie-copyright">&copy; 2026 NutriVida</p>
+</footer>
+
+<script src="js/scriptcontacto.js"></script>
+</body>
+</html>
