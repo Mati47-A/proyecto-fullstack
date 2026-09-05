@@ -27,21 +27,21 @@ const planes = {
     "enfermedad-metabolica": {
         nombre: "Plan Enfermedades Metabólicas",
         descripcion: "Acompañamiento coordinado con tu médico tratante para diabetes, hipertensión y similares.",
-        precio: 30000,
+        precio: 25000,
         imagen: "img/enfermedad_metabolica.jpg",
         infoAdicional: "Trabajamos en conjunto con el médico tratante, revisando exámenes y ajustando el plan alimentario a cada tratamiento. Incluye informe de avance mensual."
     },
     "nutricion-deportiva": {
         nombre: "Plan Nutrición Deportiva",
         descripcion: "Energía y recuperación para tus entrenamientos, adaptado a tu disciplina.",
-        precio: 28000,
+        precio: 25000,
         imagen: "img/nutricion_deportiva.jpg",
         infoAdicional: "Incluye plan de carga de energía según tu carga de entrenamiento, recomendaciones de hidratación y ajuste según etapa de competencia."
     },
     "alimentacion-vegetariana": {
         nombre: "Plan Vegetariano y Vegano",
         descripcion: "Planes completos sin productos de origen animal, cuidando cada nutriente esencial.",
-        precio: 26000,
+        precio: 25000,
         imagen: "img/alimentacion_vegetariana.png",
         infoAdicional: "Incluye control de nutrientes críticos (vitamina B12, hierro, proteína) y recetario base con opciones 100% vegetales."
     }
